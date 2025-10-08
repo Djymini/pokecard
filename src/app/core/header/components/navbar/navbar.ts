@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {NAME_APP} from '../../../../share/constants/globalConstants';
 
 @Component({
   selector: 'app-navbar',
@@ -11,5 +12,6 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './navbar.scss'
 })
 export class Navbar {
+  nameApp: string = NAME_APP;
 
 }
