@@ -2,14 +2,15 @@ import {Component, input} from '@angular/core';
 import {NgStyle} from '@angular/common';
 
 @Component({
-  selector: 'app-banner-card',
+  selector: 'app-card',
   imports: [
     NgStyle
   ],
-  templateUrl: './banner-card.html',
-  styleUrl: './banner-card.scss'
+  templateUrl: './card.html',
+  styleUrl: './card.scss'
 })
-export class BannerCard {
+export class Card {
   cardImage = input.required<string>();
-
+  width = input.required<string>();
+  height = input.required<string>();
 }

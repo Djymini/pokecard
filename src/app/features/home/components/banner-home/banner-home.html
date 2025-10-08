@@ -4,7 +4,7 @@
     <app-primary-button [nameButton]="nameDetailButton"></app-primary-button>
     <div class="card-container">
       @for (card of bannerCards(); track card) {
-        <app-banner-card [cardImage]="card.image"></app-banner-card>
+        <app-card [cardImage]="card.image" [width]="widthCard" [height]="heightCard"></app-card>
       }
     </div>
   </div>

@@ -1,6 +1,6 @@
 import {Component, computed, inject, OnInit, signal} from '@angular/core';
 import {PrimaryButton} from '../../../../share/components/buttons/primary-button/primary-button';
-import {BannerCard} from '../banner-card/banner-card';
+import {Card} from '../../../../share/components/card/card';
 import {HttpClient} from '@angular/common/http';
 import {firstValueFrom} from 'rxjs';
 import {SetModel} from '../../../../share/models/set.model';
@@ -10,13 +10,15 @@ import {SetDetailModel} from '../../../../share/models/set-detail.model';
   selector: 'app-banner-home',
   imports: [
     PrimaryButton,
-    BannerCard
+    Card
   ],
   templateUrl: './banner-home.html',
   styleUrl: './banner-home.scss'
 })
 export class BannerHome implements OnInit {
-  nameDetailButton: string = "Voir détails"
+  nameDetailButton: string = "Découvrir le nouveau set"
+  widthCard: string = "195px";
+  heightCard: string = "268px";
 
   private http = inject(HttpClient);
 
