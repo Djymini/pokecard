@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  width: 190px;
-  height: 254px;
+  width: 195px;
+  height: 268px;
   transition: 200ms;
 }
 
@@ -17,9 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
   transition: 700ms;
-  background-image: url("https://assets.tcgdex.net/fr/swsh/swsh3/1/high.png");
   background-size: cover;
 }
 
