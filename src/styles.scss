@@ -3,25 +3,21 @@
 
 :root {
   --text: #050315;
-  --background: #fbf2e4;
-  --primary: #FAB12F;
-  --secondary: #DD0303;
-  --accent: #FA812F;
+  --background: #fbfbfe;
+  --primary: #2f27ce;
+  --secondary: #dedcff;
+  --accent: #433bff;
 
   --text-disable: #4c4c53;
-  --background-second: #e8ddce;
-  --primary-second: #f6cb7d;
-  --secondary-second: #f4aa9e;
-  --accent-second: #f8ab73;
+  --background-second: #dcdcdf;
 
-  --secondary-third: #f1bcaf;
+  --linearPrimarySecondary: linear-gradient(#2f27ce, #dedcff);
+  --linearPrimaryAccent: linear-gradient(#2f27ce, #433bff);
+  --linearSecondaryAccent: linear-gradient(#dedcff, #433bff);
+  --radialPrimarySecondary: radial-gradient(#2f27ce, #dedcff);
+  --radialPrimaryAccent: radial-gradient(#2f27ce, #433bff);
+  --radialSecondaryAccent: radial-gradient(#dedcff, #433bff);
 
-  --linearPrimarySecondary: linear-gradient(#faaf2e, #dd0303);
-  --linearPrimaryAccent: linear-gradient(#faaf2e, #fa802e);
-  --linearSecondaryAccent: linear-gradient(#dd0303, #fa802e);
-  --radialPrimarySecondary: radial-gradient(#faaf2e, #dd0303);
-  --radialPrimaryAccent: radial-gradient(#faaf2e, #fa802e);
-  --radialSecondaryAccent: radial-gradient(#dd0303, #fa802e);
 
 }
 
@@ -68,11 +64,6 @@ body {
   background-color: var(--background);
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Jersey25', sans-serif;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
 }

@@ -4,7 +4,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  background: var(--linearPrimaryAccent);
+  background: var(--linearPrimarySecondary);
   box-shadow: 0 1px 4px 0 var(--accent);
   overflow: hidden;
   cursor: pointer;
@@ -16,7 +16,7 @@ button:after {
   content: " ";
   width: 0%;
   height: 100%;
-  background: var(--linearSecondaryAccent);
+  background: var(--linearPrimaryAccent);
   position: absolute;
   transition: all 0.4s ease-in-out;
   right: 0;

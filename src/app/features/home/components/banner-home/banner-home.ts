@@ -1,6 +1,6 @@
 import {Component, computed, inject, OnInit, signal} from '@angular/core';
 import {PrimaryButton} from '../../../../share/components/buttons/primary-button/primary-button';
-import {Card} from '../../../../share/components/card/card';
+import {Card} from '../../../card/components/card/card';
 import {HttpClient} from '@angular/common/http';
 import {firstValueFrom} from 'rxjs';
 import {SetModel} from '../../../../share/models/set.model';
