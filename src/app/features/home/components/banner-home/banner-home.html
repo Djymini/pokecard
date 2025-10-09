@@ -1,0 +1,11 @@
+<div class="banner">
+  <div class="element-container">
+    <img [src]="bannerSet().logo + '.png'" [alt]="bannerSet().name">
+    <app-primary-button [nameButton]="nameDetailButton"></app-primary-button>
+    <div class="card-container">
+      @for (card of bannerCards(); track card) {
+        <app-card [cardImage]="card.image" [width]="widthCard" [height]="heightCard"></app-card>
+      }
+    </div>
+  </div>
+</div>

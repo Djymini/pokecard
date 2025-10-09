@@ -1,0 +1,27 @@
+<section>
+  <h2>Carte du moment</h2>
+  <div class="carousel">
+    @if (active > 0) {
+      <button class="nav left" (click)="prev()">
+        &lt;
+      </button>
+    }
+
+    @for (card of homeCard(); track $index) {
+      <div
+        class="card-container"
+        [ngStyle]="getStyle($index)"
+      >
+        @if ($index === active || Math.abs(active - $index) <= MAX_VISIBILITY) {
+          <app-card [cardImage]="card.image" [width]="widthCard" [height]="heightCard"></app-card>
+        }
+      </div>
+    }
+
+    @if (active < count - 1) {
+      <button class="nav right" (click)="next()">
+        &gt;
+      </button>
+    }
+  </div>
+</section>

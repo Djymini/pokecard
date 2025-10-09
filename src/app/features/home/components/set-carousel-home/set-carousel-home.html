@@ -1,0 +1,10 @@
+<section>
+  <h2>Les sets du moment</h2>
+  <div class="carousel-container">
+    <p-carousel [value]="homeSet()" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions">
+      <ng-template let-sets #item>
+        <app-set-card [set]="sets"></app-set-card>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>
