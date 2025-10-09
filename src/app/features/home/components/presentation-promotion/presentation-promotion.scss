@@ -1,7 +1,7 @@
 section {
-  padding: 32px 0;
-  background-color: var(--background-second);
+  margin: 32px 0;
 }
+
 h2 {
   margin: 0 auto 32px auto;
   text-align: center;
@@ -9,7 +9,8 @@ h2 {
   font-size: 48px;
 }
 
-.carousel-container {
-  width: 50%;
-  margin: 0 auto;
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
