@@ -26,20 +26,32 @@ export class HomeFacade {
   }
 
   async getHomeCard(): Promise<CardModel[]> {
-    const homeCard = await this.homeApi.getCard();
-    this.homeStore.addCard(homeCard);
-    return homeCard;
+    if(this.homeStore.homeCard().length < 1){
+      const homeCard = await this.homeApi.getCard();
+      this.homeStore.addCard(homeCard);
+      return homeCard;
+    }else {
+      return this.homeStore.homeCard();
+    }
   }
 
   async getHomeSet(): Promise<SetModel[]> {
-    const homeSet = await this.homeApi.getSet();
-    this.homeStore.addSet(homeSet);
-    return homeSet;
+    if(this.homeStore.homeSet().length < 1){
+      const homeSet = await this.homeApi.getSet();
+      this.homeStore.addSet(homeSet);
+      return homeSet;
+    }else {
+      return this.homeStore.homeSet();
+    }
   }
 
   async getPromotion(): Promise<ProductModel[]> {
-    const promotion = await this.homeApi.getPromotion();
-    this.homeStore.addPromotion(promotion);
-    return promotion;
+    if(this.homeStore.homePromotion().length < 1){
+      const promotion = await this.homeApi.getPromotion();
+      this.homeStore.addPromotion(promotion);
+      return promotion;
+    }else {
+      return this.homeStore.homePromotion();
+    }
   }
 }

@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {BannerHome} from '../components/banner-home/banner-home';
 import {CarouselHome} from '../components/carousel-home/carousel-home';
 import {SetCarouselHome} from '../components/set-carousel-home/set-carousel-home';
@@ -15,7 +15,7 @@ import {ProductModel} from '../../product/models/productModel';
     BannerHome,
     CarouselHome,
     SetCarouselHome,
-    PresentationPromotion
+    PresentationPromotion,
   ],
   template: `
     <main>
@@ -27,7 +27,7 @@ import {ProductModel} from '../../product/models/productModel';
   `,
   styles: ``
 })
-export default class HomePage {
+export default class HomePage implements OnInit {
   private route: ActivatedRoute = inject(ActivatedRoute);
   bannerSet: SetDetailModel = setDetailPlaceholder;
   homeCard: CardModel[] = [];
