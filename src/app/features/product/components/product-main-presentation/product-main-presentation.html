@@ -16,6 +16,6 @@
     <div class="price">
       <app-price-indicator [price]="product().price" [discount]="product().discount"/>
     </div>
-    <button class="buy--btn">Ajouter aux panier</button>
+    <button class="buy--btn" (click)="addToCart()">Ajouter aux panier</button>
   </div>
 </div>

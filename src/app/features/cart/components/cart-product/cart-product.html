@@ -1,0 +1,17 @@
+<div class="product-card">
+  <img [src]="product().card.image + '/high.png'" class="product-img" alt="{{ product().card.name }}">
+  <div class="product-info">
+    <h3>{{ product().card.name }}</h3>
+  <div class="product-actions">
+    <button (click)="remove()">🗑</button>
+    <div class="qty">
+      <button (click)="decrease()">–</button>
+      <input type="number" value="{{numberSameProduct()}}" min="1">
+      <button (click)="add()">+</button>
+    </div>
+    <div class="price">
+      <app-price-indicator [price]="product().price" [discount]="product().discount"></app-price-indicator>
+    </div>
+  </div>
+</div>
+</div>
