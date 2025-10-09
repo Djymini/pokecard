@@ -9,8 +9,6 @@ import {Card} from '../../../card/components/card/card';
 @Component({
   selector: 'app-product-card',
   imports: [
-    RouterLink,
-    NgOptimizedImage,
     StockIndicator,
     PriceIndicator,
     Card
@@ -20,8 +18,6 @@ import {Card} from '../../../card/components/card/card';
 })
 export class ProductCard {
   product = input.required<ProductModel>()
-  cardImage = computed(() => this.product().card.image + "/high.png")
-  altImage = computed(() => this.product().card.name + " image")
 
   cardWidth: string = '167px';
   cardHeight: string = '230px';

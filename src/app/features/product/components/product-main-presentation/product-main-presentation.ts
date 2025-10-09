@@ -16,8 +16,6 @@ import {PriceIndicator} from '../price-indicator/price-indicator';
 })
 export class ProductMainPresentation {
   product = input.required<ProductModel>()
-  cardImage = computed(() => this.product().card.image + "/high.png")
-  altImage = computed(() => this.product().card.name + " image")
 
   widthCard: string = "251px";
   heightCard: string = "345px";
