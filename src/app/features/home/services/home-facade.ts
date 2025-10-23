@@ -1,9 +1,9 @@
 import {inject, Injectable} from '@angular/core';
 import {HomeApi} from './home-api';
 import {HomeStore} from './home-store';
-import {SetDetailModel} from '../../../share/models/set-detail.model';
-import {CardModel} from '../../../share/models/card.model';
-import {SetModel} from '../../../share/models/set.model';
+import {SetDetailModel} from '../../../shared/models/set-detail.model';
+import {CardModel} from '../../../shared/models/card.model';
+import {SetModel} from '../../../shared/models/set.model';
 import {ProductModel} from '../../product/models/productModel';
 
 @Injectable({
@@ -26,20 +26,32 @@ export class HomeFacade {
   }
 
   async getHomeCard(): Promise<CardModel[]> {
-    const homeCard = await this.homeApi.getCard();
-    this.homeStore.addCard(homeCard);
-    return homeCard;
+    if(this.homeStore.homeCard().length < 1){
+      const homeCard = await this.homeApi.getCard();
+      this.homeStore.addCard(homeCard);
+      return homeCard;
+    }else {
+      return this.homeStore.homeCard();
+    }
   }
 
   async getHomeSet(): Promise<SetModel[]> {
-    const homeSet = await this.homeApi.getSet();
-    this.homeStore.addSet(homeSet);
-    return homeSet;
+    if(this.homeStore.homeSet().length < 1){
+      const homeSet = await this.homeApi.getSet();
+      this.homeStore.addSet(homeSet);
+      return homeSet;
+    }else {
+      return this.homeStore.homeSet();
+    }
   }
 
   async getPromotion(): Promise<ProductModel[]> {
-    const promotion = await this.homeApi.getPromotion();
-    this.homeStore.addPromotion(promotion);
-    return promotion;
+    if(this.homeStore.homePromotion().length < 1){
+      const promotion = await this.homeApi.getPromotion();
+      this.homeStore.addPromotion(promotion);
+      return promotion;
+    }else {
+      return this.homeStore.homePromotion();
+    }
   }
 }

@@ -1,12 +1,12 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {firstValueFrom} from 'rxjs';
-import {SetModel} from '../../../share/models/set.model';
-import {SetDetailModel} from '../../../share/models/set-detail.model';
+import {SetModel} from '../../../shared/models/set.model';
+import {SetDetailModel} from '../../../shared/models/set-detail.model';
 import {CardApi} from '../../card/services/card-api';
 import {ProductApi} from '../../product/services/product-api';
 import {ProductModel} from '../../product/models/productModel';
-import {CardModel} from '../../../share/models/card.model';
+import {CardModel} from '../../../shared/models/card.model';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +28,7 @@ export class HomeApi {
   getCard(): Promise<CardModel[]>{
     return this.cardApi.getRecentCard();
   }
+
 
   getPromotion(): Promise<ProductModel[]>{
     return this.productApi.getPromotion()

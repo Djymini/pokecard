@@ -9,6 +9,7 @@ $card-sizeH: 539px;
 
 section {
   margin: 32px auto;
+  overflow: hidden;
 }
 
 h2 {
@@ -79,11 +80,26 @@ h2 {
   border: unset;
 
   &.left {
-    transform: translateX(-100%) translatey(-50%);
+    transform: translateX(-110%) translatey(-50%);
   }
 
   &.right {
     right: 0;
-    transform: translateX(100%) translatey(-50%);
+    transform: translateX(110%) translatey(-50%);
   }
 }
+
+.pi {
+  font-size: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.pi:hover{
+  transform: scale(1.2);
+}
+
+.pi:active {
+  transform: scale(0.8);
+}
+
+

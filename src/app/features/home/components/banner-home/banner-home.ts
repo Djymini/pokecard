@@ -1,10 +1,10 @@
 import {Component, computed, inject, input, OnInit, signal} from '@angular/core';
-import {PrimaryButton} from '../../../../share/components/buttons/primary-button/primary-button';
+import {PrimaryButton} from '../../../../shared/components/buttons/primary-button/primary-button';
 import {Card} from '../../../card/components/card/card';
 import {HttpClient} from '@angular/common/http';
 import {firstValueFrom} from 'rxjs';
-import {SetModel} from '../../../../share/models/set.model';
-import {SetDetailModel} from '../../../../share/models/set-detail.model';
+import {SetModel} from '../../../../shared/models/set.model';
+import {SetDetailModel} from '../../../../shared/models/set-detail.model';
 import {HomeFacade} from '../../services/home-facade';
 
 @Component({

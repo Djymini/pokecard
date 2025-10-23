@@ -1,8 +1,8 @@
 import {computed, Injectable, signal} from '@angular/core';
-import {SetModel} from '../../../share/models/set.model';
-import {CardModel} from '../../../share/models/card.model';
+import {SetModel} from '../../../shared/models/set.model';
+import {CardModel} from '../../../shared/models/card.model';
 import {ProductModel} from '../../product/models/productModel';
-import {SetDetailModel, setDetailPlaceholder} from '../../../share/models/set-detail.model';
+import {SetDetailModel, setDetailPlaceholder} from '../../../shared/models/set-detail.model';
 
 @Injectable({
   providedIn: 'root'
