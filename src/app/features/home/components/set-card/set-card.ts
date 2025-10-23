@@ -1,5 +1,5 @@
 import {Component, computed, input} from '@angular/core';
-import {SetModel} from '../../../../share/models/set.model';
+import {SetModel} from '../../../../shared/models/set.model';
 
 @Component({
   selector: 'app-set-card',

@@ -1,9 +1,9 @@
 import {Component, inject, input, OnInit, signal} from '@angular/core';
 import {Carousel} from 'primeng/carousel';
-import {SetModel} from '../../../../share/models/set.model';
+import {SetModel} from '../../../../shared/models/set.model';
 import {SetCard} from '../set-card/set-card';
 import {firstValueFrom} from 'rxjs';
-import {CardModel} from '../../../../share/models/card.model';
+import {CardModel} from '../../../../shared/models/card.model';
 import {HttpClient} from '@angular/common/http';
 
 @Component({

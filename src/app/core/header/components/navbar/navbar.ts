@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {NAME_APP} from '../../../../share/constants/globalConstants';
+import {NAME_APP} from '../../../../shared/constants/globalConstants';
 
 @Component({
   selector: 'app-navbar',

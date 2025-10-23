@@ -1,9 +1,9 @@
 import {inject, Injectable} from '@angular/core';
 import {HomeApi} from './home-api';
 import {HomeStore} from './home-store';
-import {SetDetailModel} from '../../../share/models/set-detail.model';
-import {CardModel} from '../../../share/models/card.model';
-import {SetModel} from '../../../share/models/set.model';
+import {SetDetailModel} from '../../../shared/models/set-detail.model';
+import {CardModel} from '../../../shared/models/card.model';
+import {SetModel} from '../../../shared/models/set.model';
 import {ProductModel} from '../../product/models/productModel';
 
 @Injectable({

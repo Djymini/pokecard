@@ -1,0 +1,25 @@
+<div class="form-container">
+  <div class="image-container">
+    <app-loader></app-loader>
+    @if(cardInfo() !== null){
+      <img [src]="cardInfo() !== null ? cardInfo()?.image+'/high.png' : '/assets/images/image_placeholder.png'" [alt]="cardInfo()?.name">
+    }
+  </div>
+
+  <div class="form-container">
+    <form [formGroup]="productForm" (submit)="onSubmit()">
+      <label for="name">Nom de la carte</label>
+      <input type="name" formControlName="name" (keyup)="onKeyUp($event)">
+
+      <label for="price">Prix</label>
+      <input type="price" formControlName="price">
+
+      <label for="stock">Stock</label>
+      <input type="stock" formControlName="stock">
+
+      <label for="discount">Promotion</label>
+      <input type="discount" formControlName="discount">
+      <button class="btn" type="submit" [disabled]="productForm.invalid">Ajouter le produit</button>
+    </form>
+  </div>
+</div>

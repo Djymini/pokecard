@@ -1,5 +1,5 @@
 import { ResolveFn } from '@angular/router';
-import {SetDetailModel} from '../../../share/models/set-detail.model';
+import {SetDetailModel} from '../../../shared/models/set-detail.model';
 import {inject} from '@angular/core';
 import {HomeFacade} from '../../../features/home/services/home-facade';
 

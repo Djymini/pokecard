@@ -1,9 +1,9 @@
 import {Component, computed, inject, input, signal} from '@angular/core';
-import {CardModel} from '../../../../share/models/card.model';
+import {CardModel} from '../../../../shared/models/card.model';
 import {ActivatedRoute} from '@angular/router';
-import {SetDetailModel} from '../../../../share/models/set-detail.model';
+import {SetDetailModel} from '../../../../shared/models/set-detail.model';
 import {firstValueFrom} from 'rxjs';
-import {SetModel} from '../../../../share/models/set.model';
+import {SetModel} from '../../../../shared/models/set.model';
 import {HttpClient} from '@angular/common/http';
 import {NgStyle} from '@angular/common';
 import {Card} from '../../../card/components/card/card';

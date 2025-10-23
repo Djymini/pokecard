@@ -1,6 +1,6 @@
 import {computed, Injectable, signal} from '@angular/core';
 import {ProductModel} from '../../product/models/productModel';
-import {SetDetailModel} from '../../../share/models/set-detail.model';
+import {SetDetailModel} from '../../../shared/models/set-detail.model';
 
 @Injectable({
   providedIn: 'root'

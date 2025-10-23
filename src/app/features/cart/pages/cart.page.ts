@@ -2,8 +2,8 @@ import {Component, computed, inject, OnInit} from '@angular/core';
 import {CartProduct} from '../components/cart-product/cart-product';
 import {CartSummary} from '../components/cart-summary/cart-summary';
 import {ActivatedRoute} from '@angular/router';
-import {SetDetailModel, setDetailPlaceholder} from '../../../share/models/set-detail.model';
-import {CardModel} from '../../../share/models/card.model';
+import {SetDetailModel, setDetailPlaceholder} from '../../../shared/models/set-detail.model';
+import {CardModel} from '../../../shared/models/card.model';
 import {ProductModel} from '../../product/models/productModel';
 import {CartFacade} from '../services/cart-facade';
 
